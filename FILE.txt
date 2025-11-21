@@ -1,0 +1,33 @@
+EX1 – split()
+fork() makes a copy of a running task.
+If the result equals zero, that’s when it's running as the child.
+If it’s above zero, then you're in the main process.
+If it's –1, then the fork didn't work.
+The program shows the PID for every process, also revealing how each runs separately.
+
+Ex2 – Background Process
+With &, the task runs behind the scenes.
+snooze 300 but
+jobs displays tasks running behind the scenes.
+
+Ex3 – Stopping a Process
+Find the PID using:
+ps aux | grep sleep
+Kill  instead
+Look once more using ps aux | grep sleep.
+
+Ex4 – Pause and Resume
+Pause a process:
+kill -STOP
+Resume it:
+kill -CONT
+
+Ex5 – Linker
+We created a pair of C files.
+A single file holds the action, while another triggers it.
+The linker ties them together - forming a single runnable file.
+If you tweak a file then recompile, the linker adjusts the end program.
+
+EX6 – Loader
+The loader puts the program into memory while pulling in needed shared libraries.
+Running ldd on simple_program reveals which libs it relies on.
